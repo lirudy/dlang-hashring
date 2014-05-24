@@ -5,6 +5,7 @@ Hash Ring implemented by D language
 
 
 Usage:
+```D
     import hashring
     int[string] w;
     w["172.16.40.141"] = 1;
@@ -16,3 +17,4 @@ Usage:
     writeln(hr.get_node("232"));
     writeln(hr.get_node("3"));
     writeln(hr.get_node("fgsdfsd"));
+    ```
