@@ -79,10 +79,10 @@ class HashRing{
         }
         auto tkey = this.gen_key(key);
         auto rev_keys = this._sorted_keys.dup.reverse;
-        auto pos = -1;
+        int pos = -1;
         foreach(idx, v; rev_keys){
             if (tkey > v) {
-                pos = idx;
+                pos = to!int(idx);
                 break;
             }
         }
@@ -90,7 +90,7 @@ class HashRing{
         if (pos < 1){
             return 0;
         }else{
-            return rev_keys.length - pos;
+            return to!int(rev_keys.length) - pos;
         }
     }
 
