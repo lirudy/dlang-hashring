@@ -1,7 +1,8 @@
 dlang-hashring
 ==============
 
-Hash Ring implemented by D language.Thanks for https://github.com/williamstein/python-hashring
+Hash Ring implemented by D language.
+Thanks to https://github.com/williamstein/python-hashring
 
 Usage:
 ```D
@@ -16,4 +17,5 @@ Usage:
     writeln(hr.get_node("232"));
     writeln(hr.get_node("3"));
     writeln(hr.get_node("fgsdfsd"));
-    ```
+    
+```
